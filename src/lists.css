@@ -1,0 +1,24 @@
+.listStyle {
+    display: grid;
+    justify-content: center;
+    grid-gap: 5em 10em;
+    grid-template-columns: 5em 5em 5em 5em 5em 5em;
+    margin-top: 6em;
+  }
+
+.listLinkStyle {
+    border: none;
+    display: grid;
+    box-shadow: 1em #888888;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(244, 244, 244, 0.568);
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.356);
+    padding: 4em;
+    justify-content: center;
+    border-radius: 0.5em;
+}
+
+.link {
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+.pokedexBack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50em;
+    height: 30em;
+    padding: 3em;
+    margin: 5em auto;
+    background-color: #e40202;
+    border-radius: 1em;
+    box-shadow: 0 14px 45px rgba(0, 0, 0, 0.22), 0 18px 45px rgba(0, 0, 0, 0.22);
+  }

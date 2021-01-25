@@ -1,0 +1,36 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.headerStyle {
+    text-align: center;
+    justify-content: center;
+}
+
+.linkStyle {
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 2em;
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.356);
+    background-color: rgba(244, 244, 244, 0.568);
+    border-radius: 0.5em;
+}
+
+.linkStyle:hover {
+    background-color: rgba(225, 225, 225, 0.269);
+}
+
+.logoStyle {
+    height: 20em;
+    width: 50em;
+    padding-bottom: 3em;
+}
+
+.background {
+    background: url("./images/pokemons.jpeg");
+    background-repeat: no-repeat;
+}
