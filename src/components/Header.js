@@ -1,17 +1,17 @@
 import React from 'react';
 
 import Navigation from './Navigation';
-import logo from '../images/pokemon-logo.png';
+import logo from '../images/iPvcyJv.png';
 
 function Header() {
 
     return (
-        <header className='border-b p-3 flex justify-between object-center'>
-            <span>
-                <img alt='logo' src={logo} />
-            </span>
+        <div>
+            <header className='header'>
+                <img alt='logo' src={logo} className='object-center logo' />
+            </header>
             <Navigation />
-        </header>
+        </div>
     );
 }
 

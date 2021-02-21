@@ -1,9 +1,11 @@
 import React from 'react';
 
+import '../styles/index.css';
+
 function Footer() {
 
     return (
-        <footer className='bg-gray-200 text-center text-xs p-3 absolute bottom-0 w-full'>
+        <footer className='footer'>
             &copy; Copyright 2021
         </footer>
     );

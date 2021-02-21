@@ -1,24 +1,39 @@
-.listStyle {
-    display: grid;
-    justify-content: center;
-    grid-gap: 5em 10em;
-    grid-template-columns: 5em 5em 5em 5em 5em 5em;
-    margin-top: 6em;
-  }
-
-.listLinkStyle {
-    border: none;
-    display: grid;
-    box-shadow: 1em #888888;
-    text-decoration: none;
-    color: #000000;
-    background-color: rgba(244, 244, 244, 0.568);
-    box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.356);
-    padding: 4em;
-    justify-content: center;
-    border-radius: 0.5em;
-}
-
 .link {
     text-decoration: none;
+}
+
+.card-style {
+    background-color: rgba(132,148,166,0.51);
+    box-shadow: 1em 1em 1em rgba(7,7,7,0.37);
+    width: 20em;
+    height: 10em;
+    border-radius: 0.5em;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    justify-self: center;
+    align-self: center;
+}
+
+.card-style:hover {
+    background-color: rgb(32, 130, 250);
+}
+
+.type-version {
+    background-color: rgba(132,148,166,0.51);
+    color: white;
+    border-radius: 0.5em;
+    padding: 2em;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: fit-content;
+    width: 40em;
+    justify-self: center;
+    align-self: center;
+    margin-left: 75em;
 }

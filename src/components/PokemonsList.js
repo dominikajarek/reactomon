@@ -4,6 +4,7 @@ import Loader from './Loader';
 import PokemonCard from './PokemonCard';
 import { useAxiosGet } from '../hooks/HttpRequests';
 import '../styles/index.css';
+import '../styles/lists.css';
 
 function PokemonsList() {
 
@@ -25,10 +26,12 @@ function PokemonsList() {
         return (
             content = 
             pokemons.data.results.map((pokemon, key) =>
-                <div key={ key }>
-                    <PokemonCard
-                        pokemons={ pokemon }
-                    />
+                <div>
+                    <div key={ key }>
+                        <PokemonCard
+                            pokemons={ pokemon }
+                        />
+                    </div>
                 </div>
             )
         );

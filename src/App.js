@@ -12,22 +12,22 @@ import './styles/index.css';
 function App() {
     
     return (
-      <div className='relative pb-10 min-h-screen'>
+      <div className='relative pb-10 min-h-screen min-w-screen'>
         <Router>
         <Header />
-        <div className='p-3 grid grid-rows-4 grid-flow-col gap-3'>
+        <div className='app-container'>
           <Switch>
             <Route exact path='/'>
               <PokemonsList />
-            </Route>
-            <Route exact path='/pokemons/:id'>
-              <Pokemon />
             </Route>
             <Route exact path='/types'>
               <TypesList />
             </Route>
             <Route exact path='/types/:id'>
               <Type />
+            </Route>
+            <Route exact path='/pokemons/:id'>
+              <Pokemon />
             </Route>
           </Switch>
         </div>

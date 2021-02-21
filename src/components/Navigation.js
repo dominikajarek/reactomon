@@ -3,23 +3,27 @@ import { Link } from 'react-router-dom';
 
 function Navigation() {
     return (
-        <div>
+        <div className='nav-container'>
             <ul>
-                <li>
-                    <Link 
-                        to='/' 
-                        className='text-white py-3 border-t border-b block'
-                    >
-                        Pokemons
-                    </Link>
+                <li className='li-nav'>
+                    <button className='button-nav'>
+                        <Link
+                            to='/'
+                            className='text-white py-3 block'
+                        >
+                            Pokemons
+                        </Link>
+                    </button>
                 </li>
-                <li>
-                    <Link 
-                        to='/types' 
-                        className='text-white py-3 border-b block'
-                    >
-                        Types
-                    </Link>
+                <li className='li-nav'>
+                    <button className='button-nav'>
+                        <Link
+                            to='/types'
+                            className='text-white py-3 block'
+                        >
+                            Types
+                        </Link>
+                    </button>
                 </li>
             </ul>
         </div>

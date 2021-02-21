@@ -4,9 +4,11 @@ import { useAxiosGet } from '../hooks/HttpRequests';
 import TypeCard from './TypeCard';
 import Loader from './Loader';
 
+import '../styles/lists.css';
+
 function TypesList() {
 
-  const url = `https://pokeapi.co/api/v2/type?offset=0&limit=20`;
+  const url = `https://pokeapi.co/api/v2/type?offset=0&limit=18`;
   let types = useAxiosGet(url);
   let content = null;
 
@@ -25,7 +27,7 @@ function TypesList() {
     return (
       content =
       types.data.results.map((type, key) => 
-        <div key={ key }>
+        <div key={ key } className='types-list'>
           <TypeCard
             types={ type } />
         </div>

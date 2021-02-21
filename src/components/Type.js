@@ -24,13 +24,13 @@ function Type() {
   if (type.data) {
     return (
       content =
-      <div className='text-black py-3 border-b p-2 flex justify-center bg-gray-200 bg-opacity-50'>
-        <h1>Move damage class: { type.data.move_damage_class.name }</h1>
-        <h1>Generation: { type.data.generation.name }</h1>
-        <h1>Double damage from: { type.data.damage_relations.double_damage_from.map(damage => <h1>{damage.name}</h1>) }</h1>
-        <h1>Half damage to: { type.data.damage_relations.half_damage_to.map(damage => <h1>{damage.name}</h1>) }</h1>
-        <h1>No damage from: { type.data.damage_relations.no_damage_from.map(damage => <h1>{damage.name}</h1>)  }</h1>
-        <h1>No damage to: { type.data.damage_relations.no_damage_to.map(damage => <h1>{damage.name}</h1>)  }</h1>
+      <div className='type-version'>
+        <h1>Move damage class: { type.data.move_damage_class.name }</h1><br />
+        <h1>Generation: { type.data.generation.name }</h1><br />
+        <h1>Double damage from: { type.data.damage_relations.double_damage_from.map(damage => <h1 key={damage.name}>{damage.name}</h1>) }</h1><br />
+        <h1>Half damage to: { type.data.damage_relations.half_damage_to.map(damage => <h1 key={damage.name}>{damage.name}</h1>) }</h1><br />
+        <h1>No damage from: { type.data.damage_relations.no_damage_from.map(damage => <h1 key={damage.name}>{damage.name}</h1>)  }</h1><br />
+        <h1>No damage to: { type.data.damage_relations.no_damage_to.map(damage => <h1 key={damage.name}>{damage.name}</h1>)  }</h1><br />
       </div>
     );
   }
